@@ -1,6 +1,5 @@
 package entities;
 
-import java.util.List;
 import java.util.Map;
 
 public class Student {
@@ -33,7 +32,7 @@ public class Student {
             this.registration = matricula;
         }
 
-        public double calculaMean() {
+        public double calculateMean() {
             return grades.values().
                     stream().
                     reduce(0.0, Double::sum) / grades.size();
